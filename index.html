@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-<body style="margin: 0px;">
-  <script type="module">
-    import init from './tile-cat.js'
+  <body style="margin: 0px;">
+    <script type="module">
+      import init from './tile-cat.js'
 
-    init().catch((error) => {
-      if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
-        throw error;
-      }
-    });
-  </script>
-</body>
-
+      init().catch((error) => {
+        if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+          throw error;
+        }
+      });
+    </script>
+  </body>
 </html>
