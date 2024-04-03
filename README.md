@@ -16,5 +16,5 @@ Space - Shoot Bullet if gun
 [kenny.nl](https://kenney.nl/)
 
 # About
-This is a project that I am working on rather irregularly, this will updated once enough features are added. Please not that the game will take a while to load depending on your bandwidth during which the page will be blank.
+This is a project that I am working on rather irregularly, this will be updated whenver enough features are added. Please note that the game will take a while to load depending on your bandwidth during which the page will be blank.
 This game is written in Rust using the [Bevy Engine](https://github.com/bevyengine/bevy)
