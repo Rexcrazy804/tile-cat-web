@@ -7,9 +7,10 @@
 WASD + SPACE - Movement
 
 Shift - place a block under the cat (its actually a bunny)
-F - give cat a gun 
-J or (Left Click) - FIRE!!!!
 
+F - give cat a gun 
+
+J or (Left Click) - FIRE!!!!
 
 # Assets
 [kenny.nl](https://kenney.nl/)
