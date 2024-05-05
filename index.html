@@ -1,19 +1,27 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <title>bevy_app</title>
+        
+        <style>
+          html, body {
+            width:  100%;
+            height: 100%;
+            margin: 0;
+          }
+        </style>
+    
+<link rel="preload" href="./tile_cat-36cb834d920771ab_bg.wasm" as="fetch" type="application/wasm" crossorigin="anonymous" integrity="sha384-kRUs6okge-Ma085IAODxqrcZQVEdYjsZIdFqPh78LoR5I4dTVnPzavjz4pv9Wc6h">
+<link rel="modulepreload" href="./tile_cat-36cb834d920771ab.js" crossorigin="anonymous" integrity="sha384-OwIGyGDaeTR4cvtBohq3JIyBKeXiGGG20M3P9RRjPIuUtMJckeprgKWfJgy0R3Th"></head>
+    <body>
+        <canvas id="bevy">
+            Javascript and support for canvas is required
+        </canvas>
+    
 
-  <body style="margin: 0px;">
-    <script type="module">
-      import init from './tile_cat.js'
 
-      init().catch((error) => {
-        if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
-          throw error;
-        }
-      });
-    </script>
-  </body>
-</html>
+<script type="module">
+import init, * as bindings from './tile_cat-36cb834d920771ab.js';
+init('./tile_cat-36cb834d920771ab_bg.wasm');
+window.wasmBindings = bindings;
+
+</script></body></html>
